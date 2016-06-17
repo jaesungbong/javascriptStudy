@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>GetElementsByTagName</h1>
+	<ul>
+		<li>박재성</li>
+		<li>박재성</li>
+		<li>박재성</li>
+	</ul>
+	<ol>
+		<li>박재성</li>
+		<li>박재성</li>
+		<li>박재성</li>
+	</ol>
+	<script>
+		var uls = document.getElementsByTagName('ul')[0];
+		var lis = uls.getElementsByTagName('li');
+		for (var i = 0; lis.length; i++) {
+			lis[i].style.color = 'red';
+		}
+	</script>
+</body>
+</html>

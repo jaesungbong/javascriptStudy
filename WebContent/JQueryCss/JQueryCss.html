@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<ul id="demo">
+		<li class="active">HTML</li>
+		<li id="active">CSS</li>
+		<li class="active">JavaScript</li>
+	</ul>
+	<input type="button" value="tag" onclick="$('li').css('color','red')">
+	<input type="button" value="class"
+		onclick="$('.active').css('color','red')">
+	<input type="button" value="id"
+		onclick="$('#demo').css('color','red').css('textDecoration','underline')">
+
+	<script src="//code.jquery.com/jquery-3.0.0.min.js"></script>
+</body>
+</html>
